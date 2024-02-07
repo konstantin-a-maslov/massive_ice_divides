@@ -5,7 +5,13 @@ This repository contains a set of algorithms implemented/tested/employed within 
 
 ## Installation
 
-Installation instructions.
+We recommend using the [Anaconda](https://www.anaconda.com/download) or [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/) Python distributions. 
+After installing one of them, one can use the `conda` package manager to install the required libraries in a new environment called `massive-dem` and activate it by running
+
+```
+conda env create -f env.yml
+conda activate massive-dem
+```
 
 
 ## Kienholz et al., 2013
