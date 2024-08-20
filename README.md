@@ -101,8 +101,43 @@ To cite the original algorithm, please use the following bib entry.
 
 ## RGI ice divide copying
 
-**In development.**
+Alternatively, one might want to copy ice divides from existing inventories (e.g. RGI) to ensure a consistent time series of outlines for individual glaciers.
+To do so, please use `copy_ice_divides.py`.
 
+The manual for the script is provided below, use accordingly. 
+
+```
+usage: copy_ice_divides.py [-h] [--dem_conditioned] [--dem_conditioning_method {fill,breach}] [--dem_smoothing DEM_SMOOTHING] [--no_sliver_filtering] [--a_sliver_1 A_SLIVER_1]
+                           [--a_sliver_2 A_SLIVER_2] [--c_sliver C_SLIVER]
+                           ref_path complexes_path output_path dem_path
+
+positional arguments:
+  ref_path              Path to reference .shp file
+  complexes_path        Path to to-be-divided .shp file
+  output_path           Path to output .shp file
+  dem_path              Path to elevation .tif file
+
+options:
+  -h, --help            show this help message and exit
+  --dem_conditioned     Skip DEM conditioning
+  --dem_conditioning_method {fill,breach}
+                        DEM conditioning method
+  --dem_smoothing DEM_SMOOTHING
+                        DEM smoothing parameter
+  --no_sliver_filtering
+                        Skip sliver filtering
+  --a_sliver_1 A_SLIVER_1
+                        Area threshold for filtering out slivers
+  --a_sliver_2 A_SLIVER_2
+                        Area threshold for filtering out prolongated slivers
+  --c_sliver C_SLIVER   Compactness threshold for filtering out slivers
+```
+
+You can also access the manual page of the script by running
+
+```
+(massive-dem) python copy_ice_divides.py -h
+```
 
 ## License
 
