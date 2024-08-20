@@ -101,7 +101,7 @@ To cite the original algorithm, please use the following bib entry.
 
 ## RGI ice divide copying
 
-Alternatively, one might want to copy ice divides from existing inventories (e.g. RGI) to ensure a consistent time series of outlines for individual glaciers.
+Alternatively, one might want to copy ice divides from existing inventories (e.g. RGI) to ensure a consistent time series of outlines for individual glaciers as recommended by [Racoviteanu et al., 2009](https://doi.org/10.3189/172756410790595804).
 To do so, please use `copy_ice_divides.py`.
 
 The manual for the script is provided below, use accordingly. 
